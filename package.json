@@ -1,0 +1,32 @@
+{
+  "name": "alibot",
+  "version": "1.0.0",
+  "description": "A web-app to generate excuses for you.",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hwgordon247/alibot.git"
+  },
+  "keywords": [
+    "excuses"
+  ],
+  "author": "Mic, Constantine, Jeremy, Harry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hwgordon247/alibot/issues"
+  },
+  "homepage": "https://github.com/hwgordon247/alibot#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.7",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "phantomjs": "^2.1.3",
+    "phantomjs-prebuilt": "^2.1.5",
+    "protractor": "^3.1.1"
+  }
+}

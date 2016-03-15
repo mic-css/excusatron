@@ -7,7 +7,23 @@
 # Ignore bundler config.
 /.bundle
 
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
+
+# if using bower-rails ignore default bower_components path bower.json files
+/vendor/assets/bower_components
+*.bowerrc
+
+/**/bower_components
+
+/**/node_modules
+
+# Ignore pow environment settings
+.powenv
+
 # Ignore all logfiles and tempfiles.
 /log/*
 !/log/.keep
 /tmp
+
+/**/.DS_Store
