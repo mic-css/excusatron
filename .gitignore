@@ -13,13 +13,17 @@
 # if using bower-rails ignore default bower_components path bower.json files
 /vendor/assets/bower_components
 *.bowerrc
-bower_components
 
-node_modules
+/**/bower_components
+
+/**/node_modules
 
 # Ignore pow environment settings
 .powenv
+
 # Ignore all logfiles and tempfiles.
 /log/*
 !/log/.keep
 /tmp
+
+/**/.DS_Store
