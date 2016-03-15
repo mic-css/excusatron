@@ -29,8 +29,9 @@ config/secrets.yml
 # if using bower-rails ignore default bower_components path bower.json files
 /vendor/assets/bower_components
 *.bowerrc
-bower.json
 bower_components
+
+node_modules
 
 # Ignore pow environment settings
 .powenv

@@ -1,0 +1,36 @@
+{
+  "name": "alibot",
+  "homepage": "https://github.com/hwgordon247/alibot",
+  "description": "A web-app to generate excuses for you.",
+  "main": "./",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "excuses"
+  ],
+  "authors": [
+    "Mic",
+    "Constantine",
+    "Jeremy",
+    "Harry"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-resource": "^1.5.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.5.0",
+    "angular-route": "^1.5.0"
+  }
+}
