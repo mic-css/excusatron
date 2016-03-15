@@ -1,0 +1,2 @@
+class ExcusesController < ApplicationController
+end
