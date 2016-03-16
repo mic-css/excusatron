@@ -1,2 +1,3 @@
 class ExcusesController < ApplicationController
+  
 end
