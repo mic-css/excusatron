@@ -8,7 +8,7 @@
 
 Scenario.delete_all
 
-Scenario.create(title: 'Running late')
+scenario_1 = Scenario.create(title: 'Running late')
 Scenario.create(title: 'Can\'t go')
 Scenario.create(title: 'Not coming home')
 # @scenario = Scenario.create()
@@ -22,3 +22,7 @@ Scenario.create(title: 'Not coming home')
 # @scenario = Scenario.create()
 # @scenario.type = 'Not coming home'
 # @scenario.save
+
+Excuse.create(title: 'Stuck in traffic',    scenario:scenario_1)
+Excuse.create(title: 'Dog ate shoes',       scenario:scenario_1)
+Excuse.create(title: 'Abducted by aliens',  scenario:scenario_1)

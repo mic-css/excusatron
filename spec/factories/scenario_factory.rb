@@ -1,3 +1,5 @@
 FactoryGirl.define do
-  factory :scenario
+  factory :scenario do
+
+  end
 end

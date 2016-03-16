@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'scenarios#index'
 
+  # get 'scenarios' => 'scenarios#index'
+  #
+  # get 'scenarios/:id/excuses' => 'excuses#index'
+
   resources :scenarios do
     resources :excuses
   end

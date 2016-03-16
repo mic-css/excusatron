@@ -24,10 +24,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bower-rails'
 
-gem 'protractor-rails'
-
-gem 'karma-rails'
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -52,8 +48,11 @@ end
 gem 'responders'
 group :test do
   gem 'rspec-rails'
+  gem 'protractor-rails'
+  gem 'karma-rails'
   gem 'capybara'
   gem 'shoulda'
   gem 'factory_girl_rails'
   gem 'poltergeist'
+  gem 'database_cleaner'
 end
