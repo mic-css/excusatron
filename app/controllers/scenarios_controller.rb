@@ -1,5 +1,7 @@
 class ScenariosController < ApplicationController
+  respond_to :json
   before_action :load_scenarios
+
 
   def index
     render json: @scenarios
