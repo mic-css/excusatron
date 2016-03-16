@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'scenarios#index'
+  root 'home#index'
 
   # get 'scenarios' => 'scenarios#index'
   #
@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   resources :scenarios do
     resources :excuses
   end
+
+  resources :home
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
