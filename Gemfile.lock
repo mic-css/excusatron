@@ -58,6 +58,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.10.0)
+    colorize (0.7.7)
     concurrent-ruby (1.0.1)
     debug_inspector (0.0.2)
     diff-lcs (1.2.5)
@@ -79,6 +80,7 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.3)
+    karma-rails (0.0.0)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -95,6 +97,9 @@ GEM
       cliver (~> 0.3.1)
       multi_json (~> 1.0)
       websocket-driver (>= 0.2.0)
+    protractor-rails (0.0.19)
+      colorize
+      railties
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -198,8 +203,10 @@ DEPENDENCIES
   factory_girl_rails
   jbuilder (~> 2.0)
   jquery-rails
+  karma-rails
   pg (~> 0.15)
   poltergeist
+  protractor-rails
   rails (= 4.2.5.1)
   responders
   rspec-rails
