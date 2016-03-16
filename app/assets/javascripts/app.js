@@ -1,5 +1,1 @@
-(function() {
-  'use strict';
-
-  angular.module('alibot', []);
-}());
+var alibot = angular.module('alibot', []);
