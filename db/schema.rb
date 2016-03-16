@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20160315164801) do
   add_index "excuses", ["scenario_id"], name: "index_excuses_on_scenario_id", using: :btree
 
   create_table "scenarios", force: :cascade do |t|
-    t.string   "type"
+    t.string   "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
