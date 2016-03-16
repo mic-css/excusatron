@@ -4,11 +4,15 @@
   "description": "A web-app to generate excuses for you.",
   "main": "index.js",
   "scripts": {
-    "test": "start"
-  },
+        "test": "karma start spec/javascripts/karma.conf.js",
+        "prestart": "npm install",
+        "postinstall": "rake bower:install",
+        "start": "http-server ./app -a 0.0.0.0 -p 8000",
+        "update-webdriver": "webdriver-manager update --standalone",
+        "protractor": "protractor test/e2e/conf.js"  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hwgordon247/alibot.git"
+    "url": "https://github.com/hwgordon247/alibot.git"
   },
   "keywords": [
     "excuses"
