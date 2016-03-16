@@ -4,7 +4,7 @@
   "description": "A web-app to generate excuses for you.",
   "main": "index.js",
   "scripts": {
-        "test": "karma start test/karma.conf.js",
+        "test": "karma start spec/javascripts/karma.conf.js",
         "prestart": "npm install",
         "postinstall": "bower install",
         "start": "http-server ./app -a 0.0.0.0 -p 8000",
