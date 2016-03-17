@@ -1,8 +1,8 @@
-describe('scenarioController', function(){
+describe('scenariosController', function(){
   var ctrl;
 
   beforeEach(inject(function($controller){
-    ctrl = $controller('scenarioController');
+    ctrl = $controller('scenariosController');
   }));
 
   it('loads and displays the buttons', function(){
