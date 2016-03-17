@@ -1,8 +1,9 @@
 (function() {
   'use strict';
 
-  angular.module('alibot')
-  .controller("scenariosController", [function(){
+  angular
+    .module('alibot')
+    .controller("scenariosController", [function(){
     var self = this;
     self.buttons = {};
 
