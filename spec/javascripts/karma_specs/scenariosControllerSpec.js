@@ -5,7 +5,5 @@ describe('scenariosController', function(){
     ctrl = $controller('scenariosController');
   }));
 
-  it('loads and displays the buttons', function(){
-    expect(ctrl.buttons).toContain("Can't go");
-  });
+
 });
