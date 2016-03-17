@@ -2,5 +2,4 @@
   'use strict';
 
   angular.module('alibot', ['ngRoute','templates']);
-  
 }());

@@ -5,12 +5,12 @@
     .config(function ($routeProvider) {
       $routeProvider
         .when("/scenarios", {
-          templateUrl: "home.html",
-          controller: "scenariosController"
+          templateUrl: "scenarios.html",
+          controller: "scenariosController as scenariosCtrl"
         })
         .when("/excuses", {
-          templateUrl: "choices.html",
-          controller: "excusesController"
+          templateUrl: "excuses.html",
+          controller: "excusesController as excusesCtrl"
         })
         .otherwise({redirectTo: "/scenarios"});
     });

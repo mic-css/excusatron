@@ -3,19 +3,15 @@
 
   angular
     .module('alibot')
-    .controller("scenariosController", [ '$http', function($http){
+    .controller("scenariosController", ['$http', function($http) {
     var self = this;
-    self.api = [];
-    self.test = 'hello';
+    self.scenarios = [];
 
     $http({
       method: 'GET',
       url: 'http://localhost:3000/scenarios'
     }).then(function successCallback(response) {
-      self.api = response.data;
+      self.scenarios = response.data;
     });
-
-
-
   }]);
 }());
