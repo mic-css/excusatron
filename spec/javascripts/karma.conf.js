@@ -20,7 +20,7 @@ module.exports = function(config) {
       'vendor/assets/bower_components/angular-route/angular-route.js',
       'vendor/assets/bower_components/angular-resource/angular-resource.js',
       'app/assets/javascripts/**/*.js',
-      'spec/javascripts/**/*.spec.js'
+      'spec/javascripts/**/*Spec.js'
     ],
 
 
