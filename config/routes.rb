@@ -5,11 +5,11 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
 
-  resources :scenarios do
-    resources :excuses
+
+  resources :scenarios, only: [:index]  do
+    resources :excuses, only: [:index]
   end
 
-  resources :home
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
