@@ -1,24 +1,24 @@
 (function() {
   'use strict';
-
-  angular.module('alibot')
-    .controller("scenariosController", ['excusesService',function(excusesService){
+angular
+    .module('alibot')
+    .controller("scenariosController", ['$http', 'scenarioService', function($http, scenarioService) {
       var self = this;
-      self.buttons = excusesService.getExcuses().then(function(response){
-        return response.data.title;
+      self.scenarios = [];
+      // scenarioService.scenario = {};
+
+      self.selectScenario = selectScenario;
+
+      $http({
+        method: 'GET',
+        url: 'http://localhost:3000/scenarios'
+      }).then(function successCallback(response) {
+        self.scenarios = response.data;
       });
 
-      self.buttonDisplay = true;
+      function selectScenario(id) {
+        scenarioService.scenarioId = id;
+      }
+    }]);
 
-      self.excuse = function(name) {
-        self.loaded = true;
-        self.buttonDisplay = false;
-        self.name = name;
-      };
-
-      self.return = function() {
-        self.loaded = false;
-        self.buttonDisplay = true;
-      };}]
-    );
 }());

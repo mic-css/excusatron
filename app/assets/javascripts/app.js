@@ -1,4 +1,5 @@
 (function() {
   'use strict';
-  angular.module('alibot', []);
+
+  angular.module('alibot', ['ngRoute','templates']);
 }());
