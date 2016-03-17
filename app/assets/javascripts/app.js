@@ -1,9 +1,12 @@
 (function() {
   'use strict';
 
-  angular
-    .module('alibot', ['ngRoute']);
-    // .config(function ($routeProvider) {
-    //
-    // });
+  angular.module('alibot', ['ngRoute','templates'])
+    .config(function ($routeProvider) {
+      $routeProvider
+        .when("/", {
+          templateUrl: "home.html",
+          controller: "scenariosController"
+        });
+    });
 }());

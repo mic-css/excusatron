@@ -1,0 +1,12 @@
+<div ng-controller='scenariosController as scenario'
+  <div ng-show='scenario.buttonDisplay'>
+    <button id='runningLate' ng-click="scenario.excuse('Running Late')"> Running Late </button>
+    <button id='cantGo' ng-click="scenario.excuse('Can\'t Go')"> Can't Go </button>
+    <button id='notComingHome' ng-click="scenario.excuse('Not Coming Home')"> Not Coming Home </button>
+  </div>
+
+  <div ng-show='scenario.loaded'>
+    {{scenario.name}} Excuse:
+    <button id='return' ng-click='scenario.return()'> Go back </button>
+  </div>
+</div>
