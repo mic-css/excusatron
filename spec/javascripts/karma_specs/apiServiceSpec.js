@@ -1,15 +1,15 @@
-describe('service: excusesService', function(){
+describe('service: apiService', function(){
   var srv, scope, httpBackend;
 
   beforeEach(module('alibot'));
 
-  beforeEach(inject(function(_$httpBackend_, $rootScope, excusesService){
+  beforeEach(inject(function(_$httpBackend_, $rootScope, apiService){
     httpBackend = _$httpBackend_;
     var excuse1 = { title: 'Can\'t go'};
     httpBackend.expectGET('http://localhost:3000/scenarios').
       respond(excuse1);
     scope = $rootScope;
-    srv = excusesService;
+    srv = apiService;
     }));
 
 
