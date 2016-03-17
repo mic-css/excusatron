@@ -23,6 +23,6 @@ Scenario.create(title: 'Not coming home')
 # @scenario.type = 'Not coming home'
 # @scenario.save
 
-Excuse.create(title: 'Stuck in traffic',    scenario:scenario_1)
-Excuse.create(title: 'Dog ate shoes',       scenario:scenario_1)
-Excuse.create(title: 'Abducted by aliens',  scenario:scenario_1)
+Excuse.create(title: 'Stuck in traffic', description: 'Hi, I was going to make it to the meeting, but then I decided to continue my life.', scenario:scenario_1)
+Excuse.create(title: 'Dog ate shoes', description: 'Usual excuse... deal with it!!!', scenario:scenario_1)
+Excuse.create(title: 'Abducted by aliens', description: 'It happens', scenario:scenario_1)
