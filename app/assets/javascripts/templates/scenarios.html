@@ -1,5 +1,5 @@
 <ul id="scenarios">
   <li class="scenario" ng-repeat="scenario in scenariosCtrl.scenarios">
-    <a href="#/excuses">{{scenario.title}}</a>
+    <a href="#/excuses" ng-click="scenariosCtrl.selectScenario(scenario.id)">{{scenario.title}}</a>
   </li>
 </ul>
