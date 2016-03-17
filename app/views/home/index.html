@@ -1,22 +1,6 @@
+<div id='main'>
+  <h1>Hi, I'm Alibot</h1>
+  <h2>What's the problem?</h2>
 
-<body id='application' ng-app="alibot">
-
-
-  <h1> Alibot </h1>
-  <div ng-controller='scenarioController as scenario'>
-    <div ng-show='scenario.buttonDisplay'>
-      <button id='runningLate' ng-click="scenario.excuse('Running Late')"> Running Late </button>
-      <button id='cantGo' ng-click="scenario.excuse('Can\'t Go')"> Can't Go </button>
-      <button id='notComingHome' ng-click="scenario.excuse('Not Coming Home')"> Not Coming Home </button>
-    </div>
-
-
-    <div ng-show='scenario.loaded'>
-      {{scenario.name}} Excuse:
-
-      <button id='return' ng-click='scenario.return()'> Go back </button>
-    </div>
-
-  </div>
-
-</body>
+  <ng-view></ng-view>
+</div>

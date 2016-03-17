@@ -1,1 +1,4 @@
 asset 'angular'
+asset 'angular-mocks'
+asset 'angular-route'
+asset 'angular-resource'
