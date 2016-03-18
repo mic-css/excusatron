@@ -2,17 +2,17 @@
   'use strict';
 angular
     .module('alibot')
-    .controller("scenariosController", ['$http', 'scenarioService', 'apiService', function($http, scenarioService, apiService) {
+    .controller("scenariosController", ['$http', 'scenarioService', function($http, scenarioService) {
       var self = this;
       self.scenarios = [];
       // scenarioService.scenario = {};
 
       self.selectScenario = selectScenario;
 
-      apiService.getScenarios()
+      scenarioService.getScenarios()
       .then(function(response){
         self.scenarios = response.data;
-      })
+      });
       // $http({
       //   method: 'GET',
       //   url: 'http://localhost:3000/scenarios'

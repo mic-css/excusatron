@@ -7,7 +7,7 @@
       var self = this;
       self.excuses = [];
 
-      apiService.getExcuses(scenarioService.scenarioId)
+      scenarioService.getExcuses(scenarioService.scenarioId)
         .then(function (response) {
           self.excuses = response.data;
         });
