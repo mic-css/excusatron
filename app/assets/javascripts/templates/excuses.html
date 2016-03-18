@@ -1,9 +1,12 @@
 <ul id="excuses">
-  <li class="excuse" ng-repeat="excuse in excusesCtrl.excuses">
-    {{excuse.title}} ... {{excuse.description}}
+  <li class="excuse" ng-repeat="excuse in excusesCtrl.excuses" >
+
+    {{excuse.title}} <input type="checkbox" ng-model="myCheck">
+    <div id='messageBody' class="my-animation" ng-show="myCheck"> {{excuse.description}} </div>
+
   </li>
 
   <a id='return' href="#/"> Return </a><br>
-  
+
 
 </ul>
