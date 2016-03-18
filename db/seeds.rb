@@ -11,7 +11,7 @@ Scenario.delete_all
 
 
 
-scenario_1 = Scenario.create(title: 'Running late &#x1F3C3;')
+scenario_1 = Scenario.create(title: 'Running late')
 Excuse.create(title: 'Stuck in traffic', description: 'Hey there, The taffic sucks... what can I do. I will be there in a bit.', scenario:scenario_1)
 Excuse.create(title: 'Dog ate shoes', description: 'Dear Dog, I\'m getting you put down tomorrow.', scenario:scenario_1)
 Excuse.create(title: 'Abducted by aliens', description: 'I\'m going to be late dude, the aliens are refusing to remove the probe until Friday.', scenario:scenario_1)
