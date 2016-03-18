@@ -2,14 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import "shared";
 
+.excuse-title {
+  @include button;
+}
 
 .my-animation {
-    background-color: lightblue;
+    height: 200px;
+    width: 400px;
+    background-color: inherit;
     transition: .5s linear all;
-    height: 80px;
     overflow: hidden;
+    border-radius: 5px;
 }
+
 .my-animation.ng-hide {
-    height:0;
+    height: 0px;
+}
+
+button {
+  background-color: $background-color;
+  border: none;
+  border-radius: 5px;
 }

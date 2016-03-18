@@ -22,7 +22,7 @@ Excuse.create(title: 'No reason', description: 'Hi, I was going to make it to yo
 
 
 scenario_3 = Scenario.create(title: 'Not coming home')
-Excuse.create(title: 'Tree hugging', description: 'Hey babe, Calling things off... I have fallen in love with a tree and frankly it is better in bed that you. Its got wood!', scenario:scenario_3)
+Excuse.create(title: 'Tree hugging', description: 'Hey babe, Calling things off... I have fallen in love with a tree and frankly it is better in bed than you. Its got wood!', scenario:scenario_3)
 Excuse.create(title: 'Commune', description: 'Sorry, but I have joined a cult and I now live in a commune... have a good life!', scenario:scenario_3)
 
 

@@ -5,6 +5,7 @@
     "angular-mocks": "latest",
     "angular-route": "latest",
     "angular-resource": "latest",
+    "normalize.css": "latest",
     "angular-animate": "latest"
   }
 }
