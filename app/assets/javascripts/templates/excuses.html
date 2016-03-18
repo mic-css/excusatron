@@ -1,9 +1,21 @@
 <ul id="excuses">
-  <li class="excuse" ng-repeat="excuse in excusesCtrl.excuses">
-    {{excuse.title}} ... {{excuse.description}}
-  </li>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=708999909202793";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <li class="excuse" ng-repeat="excuse in excusesCtrl.excuses">
+      {{excuse.title}}
+      <div class="fb-like" data-href="http://localhost:3000/#/excuses/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+    </li>
 
   <a id='return' href="#/"> Return </a><br>
-  
 
 </ul>
