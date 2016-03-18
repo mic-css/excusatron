@@ -8,12 +8,13 @@ $colors: #297FB8, #F1C40F, #16A086, #34495E, #3598DB, #2DCC70, #1BBC9B, #E84C3D;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 400px;
   height: 100px;
 }
 
 body {
   font: 130% $font-stack;
+  box-sizing: border-box;
   color: white;
   text-transform: uppercase;
   background-color: $background-color;

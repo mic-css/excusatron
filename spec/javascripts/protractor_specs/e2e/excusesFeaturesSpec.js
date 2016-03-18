@@ -8,7 +8,7 @@ describe('Excuses page', function () {
   var excuses = element.all(by.css('.excuse'));
 
   it("has the relevant excuses to a given scenario", function() {
-    expect(excuses.first().getText()).toBe('STUCK IN TRAFFIC');
+    expect(excuses.first().getText()).toContain('STUCK IN TRAFFIC');
     expect(excuses.count()).toBe(3);
   });
 

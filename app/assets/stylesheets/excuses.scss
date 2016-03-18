@@ -4,6 +4,23 @@
 
 @import "shared";
 
-li {
+.excuse-title {
   @include button;
+}
+
+.my-animation {
+    height: 150px;
+    width: 400px;
+    transition: .5s linear all;
+    overflow: hidden;
+}
+
+.my-animation.ng-hide {
+    height: 0px;
+}
+
+button {
+  background-color: $background-color;
+  border: none;
+  border-radius: 5px;
 }

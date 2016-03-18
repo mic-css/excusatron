@@ -1,8 +1,15 @@
 <ul id="excuses">
+
   <li class="excuse button-{{excuse.id}}" ng-repeat="excuse in excusesCtrl.excuses">
-    {{excuse.title}}
+    <div class="excuse-title" ng-click="myCheck=true">
+      {{excuse.title}}
+    </div>
+    <div ng-show="myCheck" class="my-animation"> {{excuse.description}}
+      <br />
+      <br />
+      <button type="button" ng-click="myCheck=false">close</button>
+    </div>
   </li>
 
-  <a id='return' href="#/"> Return </a><br>
-
+  <a id='return' href="#/">Nah, go back</a>
 </ul>
