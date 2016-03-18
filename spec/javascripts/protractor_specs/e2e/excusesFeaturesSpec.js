@@ -9,7 +9,6 @@ describe('Excuses page', function () {
 
   it("has the relevant excuses to a given scenario", function() {
     expect(excuses.first().getText()).toContain('Stuck in traffic');
-    expect(excuses.count()).toBe(3);
   });
 
 

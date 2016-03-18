@@ -13,7 +13,6 @@ describe('Scenarios page', function () {
 
   it("displays scenarios", function () {
     expect(scenarios.first().getText()).toBe('Running late');
-    expect(scenarios.count()).toBe(3);
   });
 
   it("can select a scenario", function () {
