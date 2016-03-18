@@ -1,9 +1,20 @@
 <ul id="excuses">
-  <li class="excuse" ng-repeat="excuse in excusesCtrl.excuses">
-    {{excuse.title}} ... {{excuse.description}}
+  <li class="excuse" ng-repeat="excuse in excusesCtrl.excuses" >
+
+    <button type="button" ng-click="myCheck=true"> {{excuse.title}} </button>
+    <div  class="my-animation" ng-show="myCheck"> {{excuse.description}} <br>
+      <button type="button" ng-click="myCheck=false"> - </button>
+    </div>
+
+     <!-- <button type="button" ng-click="excusesCtrl.expansionsToggle(excuse.id)"> {{excuse.title}} </button>
+    <div  class="my-animation" ng-show="excusesCtrl.myCheck"> {{excuse.description}} </div> -->
+
+     <!-- <input type="checkbox" ng-model="myCheck">{{excuse.title}}</input>
+    <div id='messageBody' class="animation" ng-show="myCheck"> {{excuse.description}} </div> -->
+
   </li>
 
   <a id='return' href="#/"> Return </a><br>
-  
+
 
 </ul>
