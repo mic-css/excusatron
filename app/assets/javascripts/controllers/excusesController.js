@@ -8,7 +8,7 @@
       self.excuses = [];
       // self.myCheck = {1: false, 2: false, 3: false};
 
-      apiService.getExcuses(scenarioService.scenarioId)
+      scenarioService.getExcuses(scenarioService.scenarioId)
         .then(function (response) {
           self.excuses = response.data;
         });
