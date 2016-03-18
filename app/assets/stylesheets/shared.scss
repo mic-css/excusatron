@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+$font-stack: Montserrat, 'Helvetica Neue', Helvetica, sans-serif;
+$background-color: #8D44AD;
+$colors: #297FB8, #F1C40F, #16A086, #34495E, #3598DB, #2DCC70, #1BBC9B, #E84C3D;
+
+@mixin button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100px;
+}
+
+body {
+  font: 130% $font-stack;
+  color: white;
+  text-transform: uppercase;
+  background-color: $background-color;
+}
+
+#main {
+  max-width: 800px;
+  min-width: 400px;
+  margin: 50px auto 10px auto;
+  text-align: center;
+
+  h1, h2 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 5px;
+
+  li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto 20px auto;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.button-1 {
+  background-color: nth($colors, 1);
+}
+
+.button-2 {
+  background-color: nth($colors, 2);
+}
+
+.button-3 {
+  background-color: nth($colors, 3);
+}
+
+.button-4 {
+  background-color: nth($colors, 4);
+}
+
+.button-5 {
+  background-color: nth($colors, 5);
+}

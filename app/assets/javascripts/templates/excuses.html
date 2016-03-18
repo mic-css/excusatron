@@ -1,8 +1,8 @@
 <ul id="excuses">
-  <li class="excuse" ng-repeat="excuse in excusesCtrl.excuses">
+  <li class="excuse button-{{excuse.id}}" ng-repeat="excuse in excusesCtrl.excuses">
     {{excuse.title}}
   </li>
 
   <a id='return' href="#/"> Return </a><br>
-  
+
 </ul>
