@@ -2,27 +2,17 @@
   'use strict';
 angular
     .module('alibot')
-    .controller("scenariosController", ['$http', 'scenarioService', function($http, scenarioService) {
+    .controller("scenariosController", ['scenarioService', function(scenarioService) {
       var self = this;
       self.scenarios = [];
-      // scenarioService.scenario = {};
-
-      self.selectScenario = selectScenario;
 
       scenarioService.getScenarios()
-      .then(function(response){
-        self.scenarios = response.data;
-      });
-      // $http({
-      //   method: 'GET',
-      //   url: 'http://localhost:3000/scenarios'
-      // }).then(function successCallback(response) {
-      //   self.scenarios = response.data;
-      // });
+        .then(function(response){
+          self.scenarios = response.data;
+        });
 
-      function selectScenario(id) {
+      self.selectScenario = function (id) {
         scenarioService.scenarioId = id;
-      }
+      };
     }]);
-
 }());

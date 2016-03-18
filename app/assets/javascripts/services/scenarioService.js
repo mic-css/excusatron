@@ -3,16 +3,17 @@
 
   angular
     .module('alibot')
-    .service("scenarioService", ['$http', 'apiService', function($http, apiService) {
+    .service("scenarioService", ['apiService', function(apiService) {
       var self = this;
       self.scenarioId = {};
       self.baseUrl = "http://localhost:3000/scenarios/";
 
-      this.getScenarios = function () {
+      self.getScenarios = function () {
         return apiService.get(self.baseUrl);
       };
-      this.getExcuses = function (scenarioId) {
-        return $http.get(self.baseUrl + scenarioId + '/excuses');
+
+      self.getExcuses = function (scenarioId) {
+        return apiService.get(self.baseUrl + scenarioId + '/excuses');
       };
     }]);
 }());

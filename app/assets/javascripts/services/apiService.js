@@ -9,7 +9,7 @@
         return $http.get(url)
         .then(function(response){
           return response;
-        })
+        });
       };
     });
 }());
