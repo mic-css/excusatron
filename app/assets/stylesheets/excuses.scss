@@ -9,10 +9,12 @@
 }
 
 .my-animation {
-    height: 150px;
+    height: 200px;
     width: 400px;
+    background-color: inherit;
     transition: .5s linear all;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .my-animation.ng-hide {
